@@ -1,0 +1,95 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: white;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo */
+.logo {
+  font-weight: bold;
+  color: #1b4332;
+}
+
+/* Center links */
+.nav-center a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+  position: relative;
+}
+
+.nav-center a:hover {
+  color: #40916c;
+}
+
+/* underline animation */
+.nav-center a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #40916c;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transition: 0.3s;
+}
+
+.nav-center a:hover::after {
+  width: 100%;
+}
+
+/* Right button */
+.signin-btn {
+  background: transparent;
+  border: 1px solid #40916c;
+  color: #40916c;
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+
+.signin-btn:hover {
+  background: #40916c;
+  color: white;
+}
+/* Right section container */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Login link (simple text) */
+.nav-right a:first-child {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-right a:first-child:hover {
+  color: #40916c;
+}
+
+/* Signup button style */
+.nav-right a:last-child {
+  text-decoration: none;
+  background: #40916c;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.nav-right a:last-child:hover {
+  background: #2d6a4f;
+}
